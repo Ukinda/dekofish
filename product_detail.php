@@ -15,7 +15,7 @@ if (isset($_GET['id'])) {
     $sql = "SELECT * FROM products";
     $result = $conn->query($sql);
 
-    if ($result->num_rows > 1) {
+    if ($result->num_rows > 0) {
         $product = $result->fetch_assoc();
     } else {
         echo "Product not found!";
