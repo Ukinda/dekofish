@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tambah Produk</title>
+    <link rel="stylesheet" href="add_product.css" />
+  </head>
+  <body>
+    <div id="addProductModal" class="modal">
+      <div class="modal-content">
+          <span class="close" id="closeAddProduct">&times;</span>
+      <h1>Tambah Produk Baru</h1>
+      <form action="add_product.php" method="post" enctype="multipart/form-data">
+      <label for="name">Nama Produk:</label>
+      <input type="text" id="name" name="name" />
+
+      <label for="description">Deskripsi:</label>
+      <textarea id="description" name="description"></textarea>
+
+      <label for="price">Harga:</label>
+      <input type="text" id="price" name="price" />
+
+      <label for="image">Gambar:</label>
+      <input type="file" id="image" name="image" />
+
+      <label for="featured">Produk Unggulan:</label>
+      <input type="checkbox" id="featured" name="featured" value="1" />
+      <span>Jadikan produk ini sebagai produk unggulan</span>
+
+      <input type="submit" value="Tambah Produk" />
+      </div>
+      </div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
